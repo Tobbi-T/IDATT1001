@@ -1,0 +1,8 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>180</x><y>0</y><w>330</w><h>100</h></coordinates><panel_attributes>&lt;&lt;Currency&gt;&gt;
+--
+-double iNok: Hvor mange norske kroner 1 av valutaen er.
+--
++string navn: Navnet på valutaen.
++double tilNok(): Konverterer en sum i valutaen til NOK.
++double fraNok(): Konverterer en sum i NOK til valutaen.
+</panel_attributes><additional_attributes></additional_attributes></element></diagram>

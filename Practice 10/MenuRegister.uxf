@@ -1,0 +1,29 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>50</x><y>30</y><w>350</w><h>170</h></coordinates><panel_attributes>&lt;&lt;MenuRegister&gt;&gt;
+Holds dishes and menus and acts as user interface.
+--
+-menus: ArrayList&lt;Menu&gt;
+-dishes: ArrayList&lt;Dish&gt;
+--
++addMenu(): Adds a new menu.
++addDish(): Adds a new dish.
++getDishByName(): Gets one dish by name.
++getDishesByType(): Get one or more dishes by type.
++getMenusByTotalPrice(): Get one or more menu by sum price.
++toString(): Returns a string showing all dishes and menus.</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>450</x><y>60</y><w>260</w><h>130</h></coordinates><panel_attributes>&lt;&lt;Menu&gt;&gt;
+Holds dishes and is used by MenuRegister.
+--
+-name: String
+-dishes: ArrayList&lt;Dish&gt;
+--
++addDish(): Adds a new dish.
++getDishes(): Get one or more dishes by type.
++getName(): Get name of menu.</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>460</x><y>270</y><w>260</w><h>140</h></coordinates><panel_attributes>&lt;&lt;Dish&gt;&gt;
+Holds information on a dish.
+--
+-name: String
+-type: String
+-price: int
+--
++getName(): Get name of dish.
++getType(): Get type of dish.
++getPrice(): Get price of dish.</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>390</x><y>100</y><w>80</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>60;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>180</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element></diagram>
