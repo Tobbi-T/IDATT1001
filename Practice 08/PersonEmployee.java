@@ -120,8 +120,16 @@ class Employee {
         return monthlyWage;
     }
 
+    public void setMonthlyWage(float monthlyWage) {
+        this.monthlyWage = monthlyWage;
+    }
+
     public double getTaxRate() {
         return taxRate;
+    }
+
+    public void setTaxRate(double taxRate) {
+        this.taxRate = taxRate;
     }
 
     public double getMonthlyTax() {
@@ -146,14 +154,6 @@ class Employee {
 
     public int getYearsEmployed() {
         return LocalDate.now().getYear() - employedYear;
-    }
-
-    public void setMonthlyWage(float monthlyWage) {
-        this.monthlyWage = monthlyWage;
-    }
-
-    public void setTaxRate(double taxRate) {
-        this.taxRate = taxRate;
     }
 
     public boolean employedLongerThan(int years) {
